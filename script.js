@@ -37,7 +37,7 @@ playerChoice.forEach(choice => {
         choice.classList.remove('bd--green');
         choice.classList.remove('bd--draw');
         document.querySelector('.result').textContent = '';
-    }, 1000);
+    }, 800);
     if(playerScores == 5 || computerScores == 5) {
         document.querySelector('.humanScores p').innerHTML = playerScores;
         document.querySelector('.comScores p').innerHTML = computerScores;
