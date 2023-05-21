@@ -4,23 +4,27 @@
 
  html, body {
     background: #868F96 no-repeat;
-    height: 100% 
+    height: 100%; 
+    margin: 0;
+    padding: 0;
 }
 
-body {
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    margin: 0;
-} 
+}
+
+
  main {
     display: flex;
     gap: 100px; 
 } 
 
 .modal {
-    position: absolute;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -72,6 +76,10 @@ body {
     margin-bottom: 80px;
 }
 
+.box--modal ul li {
+    margin-top: 15px;
+}
+
 .restart-modal {
     margin-top: 34px;
 }
@@ -83,7 +91,6 @@ body {
 .human, .com {
     font-size: 30px;
     font-weight: bold;
-    margin-top: 200px;
 }
 
 h1 {
@@ -115,8 +122,8 @@ img {
 .btn-box {
     margin-top: 60px;
     display: flex;
-    justify-content: center;
-    gap: 150px;
+    justify-content: space-between;
+    margin: 10px;
 }
 
 .displayNone, .displayNone-modal {
@@ -131,7 +138,16 @@ img {
 .box {
     border: 3px solid #1F1F1F; 
     flex: 1;
-    max-width: 200px;
+    max-width: 180px;
+    width: 80px;
+    height: auto;
+    margin-bottom: 20px;
+}
+
+.count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     margin-bottom: 50px;
 }
 
@@ -169,4 +185,79 @@ img {
     background: #575757;
     transition: .5s;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .container {
+        max-width: 992px;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .container {
+        max-width: 768px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 50px;
+    }
+
+    .container {
+        max-width: 540px;
+    }
+
+    .btn {
+        padding: 18px 70px;
+    }
+
+    .box--modal ul {
+        font-size: 24px;
+    }
+
+    .rule h2 {
+        font-size: 36px;
+    }
+
+    .box--modal h2 {
+        font-size: 36px;
+    }
+
+    .count h2 {
+        font-size: 36px;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .container {
+        max-width: 100%;
+    }
+
+    h1 {
+        margin-bottom: 50px;
+    }
+
+    .result {
+        font-size: 24px;
+    }
+
+    .count h2 {
+        font-size: 28px;
+    }
+
+    h1 {
+        font-size: 36px;
+    }
+    .humanScores, .comScores {
+        font-size: 24px;
+    }
+    .btn {
+        padding: 11px 47px;
+        font-size: 18px;
+    } 
+
+    .choices {
+        gap: 20px;
+    }
 }
