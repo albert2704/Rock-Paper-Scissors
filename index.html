@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rock-Paper-Scissors</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="modal displayNone-modal">
+        <div class="box--modal">
+            <h2>Thank For Playing</h2>
+            <p></p>
+            <button class="btn restart-modal" role="button">Restart</button>
+        </div>
+    </div>
+    <div class="modal rule rule--modal">
+        <div class="box--modal">
+            <i class="fa-solid fa-circle-xmark"></i>
+            <h2>I think you are also know the rule of this game, but i'll list some rule here: </h2>
+            <ul>
+                <li>You will play with the computer.</li>
+                <li>You have three choices: Rock, paper, scissors.</li>
+                <li>Rock beat scissors, paper beat rock, scissors beat paper. Sound great, right?.</li>
+                <li>Who win 5 rounds first is the winner.</li>
+                <li>For the best experience, you should wait a second after choose the weapon</li>
+            </ul>
+            <button class="btn check--btn" role="button">Ok, i've got it.</button>
+        </div>
+    </div>
+    <main>
+        <div class="human displayNone">
+            <h2>Human</h2>
+            <div class="humanScores">Scores: <p>0</p></div>
+        </div>
+        <div class="main--display">
+            <h1>Rock-Paper-Scissors</h1>
+            <div class="choices displayNone">
+                <div class="box" id="r"><img src="./images/Rock-paper-scissors_(rock) (1).png" alt="rock-sign"></div>
+                <div class="box" id="p"><img src="./images/Rock-paper-scissors_(paper).png" alt="paper-sign"></div>
+                <div class="box" id="s"><img src="./images/Rock-paper-scissors_(scissors).png" alt="scissors-sign"></div>
+            </div>
+            <div class="result"></div>
+            <div class="btn-box">
+            <button class="btn btn--start" role="button">Start</button>
+            <button class="btn btn--rule" role="button">Rule</button>
+            </div>
+        </div>
+        <div class="com displayNone">
+            <h2>Com</h2>
+            <div class="comScores">Scores: <p>0</p></div>
+        </div>
+    </main>
+
+</body>
+</html>
